@@ -44,7 +44,7 @@ app.use(
 app.use(cookieParser());
 app.use(express.json());
 app.get("/",(req,res)=>{
-  res.json("hello")
+  res.json("hello");
 })
 app.use("/api/auth", authRouter);
 app.use("/api/admin/products", adminProductsRouter);
